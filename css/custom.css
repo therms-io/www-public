@@ -8,3 +8,7 @@
   font-family: 'brand_logo';
   src: url("/fonts/brand_logo-webfont.woff2") format("woff2"), url("/fonts/brand_logo-webfont.woff") format("woff"), url("/fonts/brand_logo.ttf") format("truetype");
 }
+
+.font-large {
+  font-size: 150%;
+}
