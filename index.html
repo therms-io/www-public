@@ -77,13 +77,24 @@
                 security guard & patrol
                 <span>communication, operations & reporting</span>
               </h1>
-              <a href="/" class="btn btn-outline btn-xl js-scroll-trigger">Login</a>
+              <a
+                href="https://app.therms.io"
+                class="btn btn-outline btn-xl d-lg-none js-scroll-trigger"
+                >Login</a
+              >
+              <div style="max-width: 200px;">
+                <a
+                        href="https://app.therms.io/login?register=true"
+                        class="btn btn-outline btn-xl d-none d-lg-block js-scroll-trigger"
+                >Register</a
+                >
+              </div>
             </div>
           </div>
 
           <div class="d-none d-lg-block col-lg-5 my-auto">
-            <div class="login-container">
-              <form action="http://localhost:3001/login?redirect=true" method="post">
+            <div class="login-container" id="ui-auth">
+              <form action="https://app.therms.io/login?redirect=true" method="post">
                 <div class="mb-2">
                   <input name="email" placeholder="Email" type="text" />
                 </div>
@@ -300,10 +311,10 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+     Plugin JavaScript
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
+        <script src="js/new-age.min.js"></script>
   </body>
 </html>

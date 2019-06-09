@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e26b65fb-47a8-43ab-916e-f12137a7dbd6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/custom.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/new-age.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/new-age.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/new-age.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/new-age.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_cta.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_cta.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/custom.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,13 +19,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="140" column="19" lean-forward="true" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
+            <state relative-caret-position="558">
+              <caret line="318" column="9" lean-forward="true" selection-start-line="318" selection-start-column="9" selection-end-line="318" selection-end-column="9" />
               <folding>
-                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#8332#8338#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#10252#10258#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,6 +77,9 @@
       <find>new re</find>
       <find>icon</find>
       <find>we've</find>
+      <find>login</find>
+      <find>form</find>
+      <find>register</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/scss</dir>
@@ -123,7 +119,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1066" />
+    <option name="width" value="1136" />
     <option name="height" value="1165" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -227,28 +223,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560003602345</updated>
-      <workItem from="1560003604185" duration="13428000" />
+      <workItem from="1560003604185" duration="16929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13428000" />
+    <option name="totallyTimeSpent" value="16929000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1066" height="1165" extended-state="0" />
+    <frame x="0" y="23" width="1136" height="1165" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Storybook" side_tool="true" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Gulp" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27751195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2600897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Code comment" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="RNConsole" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.18248849" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.24976958" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -375,13 +371,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="140" column="19" lean-forward="true" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
+        <state relative-caret-position="558">
+          <caret line="318" column="9" lean-forward="true" selection-start-line="318" selection-start-column="9" selection-end-line="318" selection-end-column="9" />
           <folding>
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#8332#8338#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#10252#10258#0" expanded="true" />
           </folding>
         </state>
       </provider>
