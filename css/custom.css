@@ -1,0 +1,10 @@
+/*!
+ * Start Bootstrap - New Age v5.0.5 (https://startbootstrap.com/template-overviews/new-age)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
+ */
+
+@font-face {
+  font-family: 'brand_logo';
+  src: url("/fonts/brand_logo-webfont.woff2") format("woff2"), url("/fonts/brand_logo-webfont.woff") format("woff"), url("/fonts/brand_logo.ttf") format("truetype");
+}

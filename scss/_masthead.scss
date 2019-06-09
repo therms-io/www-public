@@ -1,47 +1,141 @@
 // Styling for the masthead
 header.masthead {
-    position: relative;
+  background: url('../img/bg-pattern.png'),
+    linear-gradient(
+      to right,
+      $theme-secondary,
+      rgba($theme-secondary, 0.9),
+      rgba($theme-secondary, 0.5),
+      rgba($theme-secondary, 0.1)
+    );
+  color: white;
+  padding-bottom: 100px;
+  padding-top: 150px;
+  position: relative;
+  width: 100%;
 
+  div.img-placeholder {
+    background-image: url('../img/parking-garage.jpg');
+    background-position: right bottom, left top;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 100%;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    z-index: -1;
+  }
 
-    color: white;
-    background: url('../img/bg-pattern.png'), $theme-secondary;
-    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
+  .header-content {
+    margin-bottom: 100px;
+    max-width: 500px;
+    text-align: center;
+
+    h1 {
+      @include therms-font;
+      font-size: 32px;
+
+      span {
+        @include alt-font;
+        color: grey;
+        font-size: 24px;
+        display: block;
+      }
+    }
+  }
+
+  .device-container {
+    max-width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .screen img {
+      border-radius: 3px;
+    }
+  }
+
+  .multi-device-container {
+    display: none;
+  }
+
+  @media (min-width: 992px) {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+
     .header-content {
-        max-width: 500px;
-        margin-bottom: 100px;
+      margin-bottom: 0;
+      text-align: left;
 
-        text-align: center;
-        h1 {
-            font-size: 30px;
-        }
+      h1 {
+        font-size: 48px;
+      }
     }
+
     .device-container {
-        max-width: 325px;
-        margin-right: auto;
-        margin-left: auto;
-        .screen img {
-            border-radius: 3px;
-        }
+      display: none;
+      max-width: 325px;
     }
-    @media (min-width: 992px) {
-        height: 100vh;
-        min-height: 775px;
-        padding-top: 0;
-        padding-bottom: 0;
-        .header-content {
-            margin-bottom: 0;
 
-            text-align: left;
-            h1 {
-                font-size: 50px;
-            }
+    .login-container {
+      form {
+        button[type="submit"] {
+          background-color: rgba(76, 76, 76, 0.8);
+          border: none;
+          color: grey;
+          font-size: 20px;
+          padding: 0.5em 1em;
+
+          &:hover, &:focus {
+            background-color: rgba(255, 255, 255, 0.56);
+            color: $theme-tertiary;
+            font-weight: bolder;
+          }
         }
-        .device-container {
-            max-width: 325px;
+
+        input {
+          border: none;
+          background: rgba(76, 76, 76, 0.7);
+          border-radius: 35px;
+          color: $theme-tertiary;
+          font-size: 30px;
+          padding: 0.25em 1em;
+          width: 100%;
+
+          &::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+          }
+
+          /* Change Autocomplete styles in Chrome*/
+          &:-webkit-autofill,
+          &:-webkit-autofill:hover,
+          &:-webkit-autofill:focus {
+            border: none;
+            background: rgba(76, 76, 76, 0.7);
+            -webkit-text-fill-color: $theme-tertiary;
+            -webkit-box-shadow: 0 0 0px 1000px rgba(76, 76, 76, 0.7) inset;
+            transition: background-color 5000s ease-in-out 0s;
+          }
+
+          &:focus {
+            outline: none;
+          }
         }
+      }
     }
+
+    .multi-device-container {
+      bottom: 0;
+      display: block;
+      position: absolute;
+      right: 0;
+
+      img {
+        max-height: 500px;
+        max-width: 1000px;
+        width: 60vw
+      }
+    }
+  }
 }

@@ -1,79 +1,114 @@
 // Mixins
 @mixin transition-all() {
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 @mixin background-cover() {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 @mixin button-variant($color, $background, $border) {
+  color: $color;
+  border-color: $border;
+  background-color: $background;
+
+  &:focus,
+  &.focus {
     color: $color;
-    border-color: $border;
-    background-color: $background;
+    border-color: darken($border, 25%);
+    background-color: darken($background, 10%);
+  }
+
+  &:hover {
+    color: $color;
+    border-color: darken($border, 12%);
+    background-color: darken($background, 10%);
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    border-color: darken($border, 12%);
+    background-color: darken($background, 10%);
+
+    &:hover,
     &:focus,
     &.focus {
-        color: $color;
-        border-color: darken($border, 25%);
-        background-color: darken($background, 10%);
+      color: $color;
+      border-color: darken($border, 25%);
+      background-color: darken($background, 17%);
     }
-    &:hover {
-        color: $color;
-        border-color: darken($border, 12%);
-        background-color: darken($background, 10%);
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      border-color: $border;
+      background-color: $background;
     }
-    &:active,
-    &.active,
-    .open > &.dropdown-toggle {
-        color: $color;
-        border-color: darken($border, 12%);
-        background-color: darken($background, 10%);
-        &:hover,
-        &:focus,
-        &.focus {
-            color: $color;
-            border-color: darken($border, 25%);
-            background-color: darken($background, 17%);
-        }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+// https://www.sassmeister.com/gist/7f22e44ace49b5124eec
+@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+  @each $property in $properties {
+    #{$property}: $min-value;
+  }
+
+  @media (min-width: $min-vw) {
+    @each $property in $properties {
+      #{$property}: calc(
+        #{$min-value} +
+          #{strip-unit($max-value - $min-value)} *
+          (100vw - #{$min-vw}) /
+          #{strip-unit($max-vw - $min-vw)}
+      );
     }
-    &:active,
-    &.active,
-    .open > &.dropdown-toggle {
-        background-image: none;
+  }
+
+  @media (min-width: $max-vw) {
+    @each $property in $properties {
+      #{$property}: $max-value;
     }
-    &.disabled,
-    &[disabled],
-    fieldset[disabled] & {
-        &:hover,
-        &:focus,
-        &.focus {
-            border-color: $border;
-            background-color: $background;
-        }
-    }
-    .badge {
-        color: $background;
-        background-color: $color;
-    }
+  }
 }
 
 @mixin heading-font {
-    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-    font-weight: 200;
-    letter-spacing: 1px;
+  font-family: 'Arial';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+@mixin therms-font {
+  font-family: 'brand_logo';
 }
 
 @mixin body-font {
-    font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 @mixin alt-font {
-    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }

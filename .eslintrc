@@ -1,0 +1,10 @@
+{
+  "extends": "americansoftware",
+  "rules": {
+    "import/order": [0],
+    "no-extra-boolean-cast": "off", // we use Boolean(array.length)
+    "no-plusplus": "off", // for loops use this
+    "no-underscore-dangle": [0],
+    "prefer-destructuring": "off"
+  }
+}
