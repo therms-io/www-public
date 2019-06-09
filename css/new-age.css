@@ -169,8 +169,7 @@ section h2 {
 }
 
 header.masthead {
-  background: url("../img/bg-pattern.png"), -webkit-gradient(linear, left top, right top, from(#010026), color-stop(rgba(1, 0, 38, 0.9)), color-stop(rgba(1, 0, 38, 0.5)), to(rgba(1, 0, 38, 0.1)));
-  background: url("../img/bg-pattern.png"), linear-gradient(to right, #010026, rgba(1, 0, 38, 0.9), rgba(1, 0, 38, 0.5), rgba(1, 0, 38, 0.1));
+  background: url("../img/bg-pattern.png"), linear-gradient(45deg, #010026, rgba(1, 0, 38, 0.9), rgba(1, 0, 38, 0.5), rgba(1, 0, 38, 0.1));
   color: white;
   padding-bottom: 100px;
   padding-top: 150px;
@@ -304,6 +303,7 @@ header.masthead .multi-device-container {
 }
 
 section.download {
+  background-color: #af343a;
   position: relative;
   padding: 150px 0;
 }
@@ -390,7 +390,7 @@ section.features .feature-item i {
 section.cta {
   position: relative;
   padding: 250px 0;
-  background-image: url("../img/bg-cta.jpg");
+  background-image: url("../img/security-guards-phone.jpg");
   background-position: center;
   background-size: cover;
 }
